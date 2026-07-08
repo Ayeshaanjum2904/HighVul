@@ -1,0 +1,102 @@
+[
+    {
+        "codigoBuc": "916023",
+        "concessionaria": "MAIS DISTRIB  DE VEICULOS S/A",
+        "marca": "FIAT",
+        "regiao": "SAO PAULO",
+        "total": 54,
+        "aVista": 0,
+        "financiado": 54,
+        "corretorId": 916023
+    },
+    {
+        "codigoBuc": "915058",
+        "concessionaria": "AMAZONAS LESTE LTDA",
+        "marca": "FIAT",
+        "regiao": "SAO PAULO",
+        "total": 35,
+        "aVista": 5,
+        "financiado": 30,
+        "corretorId": 915058
+    },
+    {
+        "codigoBuc": "905273",
+        "concessionaria": "CMJ COMERCIO DE VEICULOS LTDA",
+        "marca": "JEEP",
+        "regiao": "SAO PAULO",
+        "total": 27,
+        "aVista": 27,
+        "financiado": 0,
+        "corretorId": 905273
+    },
+    {
+        "codigoBuc": "903138",
+        "concessionaria": "ALLMA NOBRE COMERCIO DE VEICUL",
+        "marca": "JEEP",
+        "regiao": "CAMPINAS",
+        "total": 25,
+        "aVista": 25,
+        "financiado": 0,
+        "corretorId": 903138
+    },
+    {
+        "codigoBuc": "914986",
+        "concessionaria": "J S MARELLA AUTOMOVEIS LTDA",
+        "marca": "FIAT",
+        "regiao": "CAMPINAS",
+        "total": 20,
+        "aVista": 2,
+        "financiado": 18,
+        "corretorId": 914986
+    },
+    {
+        "codigoBuc": "909838",
+        "concessionaria": "FIRENZE COMERCIO DE VEICULOS L",
+        "marca": "FIAT",
+        "regiao": "RIO DE JANEIRO",
+        "total": 19,
+        "aVista": 1,
+        "financiado": 18,
+        "corretorId": 909838
+    },
+    {
+        "codigoBuc": "916197",
+        "concessionaria": "J S MARELLA AUTOMOVEIS LTDA",
+        "marca": "FIAT",
+        "regiao": "CAMPINAS",
+        "total": 18,
+        "aVista": 2,
+        "financiado": 16,
+        "corretorId": 916197
+    },
+    {
+        "codigoBuc": "916874",
+        "concessionaria": "GAMBATTO SUL VEICULOS LTDA",
+        "marca": "FIAT",
+        "regiao": "CURITIBA",
+        "total": 16,
+        "aVista": 16,
+        "financiado": 0,
+        "corretorId": 916874
+    },
+    {
+        "codigoBuc": "913988",
+        "concessionaria": "FLORENCA VEICULOS S/A",
+        "marca": "FIAT",
+        "regiao": "CURITIBA",
+        "total": 16,
+        "aVista": 4,
+        "financiado": 12,
+        "corretorId": 913988
+    },
+    {
+        "codigoBuc": "710723",
+        "concessionaria": "GWB DISTRIBUIDORA DE VEICULOS",
+        "marca": "JEEP",
+        "regiao": "SAO PAULO",
+        "total": 16,
+        "aVista": 0,
+        "financiado": 16,
+        "corretorId": 906255
+    }
+]

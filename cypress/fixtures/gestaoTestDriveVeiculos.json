@@ -1,0 +1,49 @@
+{
+  "pagina": 0,
+  "itensPorPagina": 50,
+  "itensTotal": 69,
+  "marcas": [
+    "Fiat",
+    "Jeep",
+    "Dodge",
+    "RAM"
+  ],
+  "veiculos": [
+    {
+      "id": 1,
+      "codigoModelo": "119",
+      "codigoVersao": "6GD",
+      "codigoSerie": "1",
+      "descricaoModelo": "DOBLO",
+      "descricaoVersao": "ESSENCE 7 Lugares",
+      "descricaoSerie": "1.8 16V FLEX MANUAL",
+      "nomeComercial": "DOBLÒ ESSENCE 7 LUGARES 1.8 16V FLEX 4P 2022",
+      "marca": "Fiat",
+      "modelYear": null
+    },
+    {
+      "id": 2,
+      "codigoModelo": "195",
+      "codigoVersao": "A4Z",
+      "codigoSerie": "2",
+      "descricaoModelo": "NOVO UNO",
+      "descricaoVersao": "ATTRACTIVE 1.0",
+      "descricaoSerie": "1.0 MANUAL FLEX MANUAL",
+      "nomeComercial": "UNO ATTRACTIVE 1.0 FLEX 4P 2021",
+      "marca": "Fiat",
+      "modelYear": null
+    },
+    {
+      "id": 3,
+      "codigoModelo": "195",
+      "codigoVersao": "B4N",
+      "codigoSerie": "2",
+      "descricaoModelo": "NOVO UNO",
+      "descricaoVersao": "DRIVE 1.0",
+      "descricaoSerie": "1.0 MANUAL FLEX MANUAL",
+      "nomeComercial": "UNO DRIVE 1.0 FLEX 4P 2021",
+      "marca": "Fiat",
+      "modelYear": null
+    }
+  ]
+}

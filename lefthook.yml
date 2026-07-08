@@ -1,0 +1,11 @@
+pre-commit:
+  parallel: true
+  commands:
+    eslint:
+      run: yarn eslint --ext .js,.jsx {staged_files} --fix && git add {staged_files}
+      glob: "*.{js,jsx}"
+      skip:
+        - merge
+        - rebase
+        - ref: HEAD~1..HEAD
+          contains: "[skip-lint]"

@@ -1,0 +1,86 @@
+import styled from 'styled-components';
+
+const validatedBackgroundInput = ({ focusedInput, disabledInput }) => {
+  if (focusedInput) {
+    return 'rgba(229, 230, 235, 0.36)';
+  }
+  if (disabledInput) {
+    return 'none';
+  }
+  return 'rgba(229, 230, 235, 0.24)';
+};
+
+const validatedColorLabel = ({ errorInput, disabledInput }) => {
+  if (errorInput) {
+    return 'rgba(222, 25, 50, 1)';
+  }
+  if (disabledInput) {
+    return '#555770';
+  }
+  return '#505669';
+};
+
+const BasicInput = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    .label, .error{
+      text-align: left;
+      color: ${validatedColorLabel};
+      font-family: CircularStd, sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      margin-bottom: 4px;
+      margin-left: 12px;
+    }
+
+    .basic-input{
+      display: flex;
+      align-items: center;
+      padding: 8px 12px;
+      border-radius: 4px;
+      background: ${validatedBackgroundInput};
+      height: 40px;
+      border: ${(props) => (props.errorInput ? '1px solid rgba(222, 25, 50, 1)' : 'none')};
+      &:hover{
+        background: ${(props) => (props.disabledInput ? 'none' : 'rgba(229, 230, 235, 0.36)')};
+      }
+      input{
+        width: 100%;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        font-family: CircularStd, sans-serif;        
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        color: rgba(80, 86, 105);
+      }
+      input::placeholder {
+        color: #505669;
+      }
+
+      input:hover::placeholder {
+        color: #505669;
+      }
+
+      input:disabled::placeholder {
+        color: #555770;
+      }
+
+      input:focus {
+        outline: none;
+        color: #555770;
+      }
+
+      input:hover {
+        color: #555770;
+      }
+    }
+`;
+
+export default BasicInput;

@@ -1,0 +1,398 @@
+[
+    {
+        "modelo": "GRAND SIENA",
+        "regioes": [
+            {
+                "total": 1,
+                "regiao": "BELO HORIZONTE"
+            },
+            {
+                "total": 1,
+                "regiao": "CAMPINAS"
+            },
+            {
+                "total": 1,
+                "regiao": "CURITIBA"
+            },
+            {
+                "total": 1,
+                "regiao": "RECIFE"
+            },
+            {
+                "total": 4,
+                "regiao": "RIO DE JANEIRO"
+            },
+            {
+                "total": 0,
+                "regiao": "BRASILIA"
+            },
+            {
+                "total": 0,
+                "regiao": "SAO PAULO"
+            }
+        ]
+    },
+    {
+        "modelo": null,
+        "regioes": [
+            {
+                "total": 57,
+                "regiao": "BELO HORIZONTE"
+            },
+            {
+                "total": 58,
+                "regiao": "CAMPINAS"
+            },
+            {
+                "total": 131,
+                "regiao": "CURITIBA"
+            },
+            {
+                "total": 72,
+                "regiao": "RECIFE"
+            },
+            {
+                "total": 49,
+                "regiao": "RIO DE JANEIRO"
+            },
+            {
+                "total": 70,
+                "regiao": "BRASILIA"
+            },
+            {
+                "total": 47,
+                "regiao": "SAO PAULO"
+            }
+        ]
+    },
+    {
+        "modelo": null,
+        "regioes": [
+            {
+                "total": 1,
+                "regiao": "BELO HORIZONTE"
+            },
+            {
+                "total": 0,
+                "regiao": "CAMPINAS"
+            },
+            {
+                "total": 4,
+                "regiao": "CURITIBA"
+            },
+            {
+                "total": 1,
+                "regiao": "RECIFE"
+            },
+            {
+                "total": 0,
+                "regiao": "RIO DE JANEIRO"
+            },
+            {
+                "total": 2,
+                "regiao": "BRASILIA"
+            },
+            {
+                "total": 1,
+                "regiao": "SAO PAULO"
+            }
+        ]
+    },
+    {
+        "modelo": null,
+        "regioes": [
+            {
+                "total": 0,
+                "regiao": "BELO HORIZONTE"
+            },
+            {
+                "total": 0,
+                "regiao": "CAMPINAS"
+            },
+            {
+                "total": 3,
+                "regiao": "CURITIBA"
+            },
+            {
+                "total": 0,
+                "regiao": "RECIFE"
+            },
+            {
+                "total": 0,
+                "regiao": "RIO DE JANEIRO"
+            },
+            {
+                "total": 0,
+                "regiao": "BRASILIA"
+            },
+            {
+                "total": 0,
+                "regiao": "SAO PAULO"
+            }
+        ]
+    },
+    {
+        "modelo": null,
+        "regioes": [
+            {
+                "total": 29,
+                "regiao": "BELO HORIZONTE"
+            },
+            {
+                "total": 29,
+                "regiao": "CAMPINAS"
+            },
+            {
+                "total": 69,
+                "regiao": "CURITIBA"
+            },
+            {
+                "total": 47,
+                "regiao": "RECIFE"
+            },
+            {
+                "total": 19,
+                "regiao": "RIO DE JANEIRO"
+            },
+            {
+                "total": 28,
+                "regiao": "BRASILIA"
+            },
+            {
+                "total": 28,
+                "regiao": "SAO PAULO"
+            }
+        ]
+    },
+    {
+        "modelo": "ARGO",
+        "regioes": [
+            {
+                "total": 56,
+                "regiao": "BELO HORIZONTE"
+            },
+            {
+                "total": 68,
+                "regiao": "CAMPINAS"
+            },
+            {
+                "total": 130,
+                "regiao": "CURITIBA"
+            },
+            {
+                "total": 83,
+                "regiao": "RECIFE"
+            },
+            {
+                "total": 65,
+                "regiao": "RIO DE JANEIRO"
+            },
+            {
+                "total": 82,
+                "regiao": "BRASILIA"
+            },
+            {
+                "total": 56,
+                "regiao": "SAO PAULO"
+            }
+        ]
+    },
+    {
+        "modelo": null,
+        "regioes": [
+            {
+                "total": 53,
+                "regiao": "BELO HORIZONTE"
+            },
+            {
+                "total": 68,
+                "regiao": "CAMPINAS"
+            },
+            {
+                "total": 126,
+                "regiao": "CURITIBA"
+            },
+            {
+                "total": 76,
+                "regiao": "RECIFE"
+            },
+            {
+                "total": 47,
+                "regiao": "RIO DE JANEIRO"
+            },
+            {
+                "total": 71,
+                "regiao": "BRASILIA"
+            },
+            {
+                "total": 51,
+                "regiao": "SAO PAULO"
+            }
+        ]
+    },
+    {
+        "modelo": "DUCATO",
+        "regioes": [
+            {
+                "total": 1,
+                "regiao": "BELO HORIZONTE"
+            },
+            {
+                "total": 0,
+                "regiao": "CAMPINAS"
+            },
+            {
+                "total": 9,
+                "regiao": "CURITIBA"
+            },
+            {
+                "total": 2,
+                "regiao": "RECIFE"
+            },
+            {
+                "total": 0,
+                "regiao": "RIO DE JANEIRO"
+            },
+            {
+                "total": 0,
+                "regiao": "BRASILIA"
+            },
+            {
+                "total": 0,
+                "regiao": "SAO PAULO"
+            }
+        ]
+    },
+    {
+        "modelo": "RAM 2500",
+        "regioes": [
+            {
+                "total": 1,
+                "regiao": "BELO HORIZONTE"
+            },
+            {
+                "total": 6,
+                "regiao": "CAMPINAS"
+            },
+            {
+                "total": 13,
+                "regiao": "CURITIBA"
+            },
+            {
+                "total": 7,
+                "regiao": "RECIFE"
+            },
+            {
+                "total": 2,
+                "regiao": "RIO DE JANEIRO"
+            },
+            {
+                "total": 13,
+                "regiao": "BRASILIA"
+            },
+            {
+                "total": 2,
+                "regiao": "SAO PAULO"
+            }
+        ]
+    },
+    {
+        "modelo": "RENEGADE",
+        "regioes": [
+            {
+                "total": 11,
+                "regiao": "BELO HORIZONTE"
+            },
+            {
+                "total": 43,
+                "regiao": "CAMPINAS"
+            },
+            {
+                "total": 27,
+                "regiao": "CURITIBA"
+            },
+            {
+                "total": 24,
+                "regiao": "RECIFE"
+            },
+            {
+                "total": 16,
+                "regiao": "RIO DE JANEIRO"
+            },
+            {
+                "total": 33,
+                "regiao": "BRASILIA"
+            },
+            {
+                "total": 30,
+                "regiao": "SAO PAULO"
+            }
+        ]
+    },
+    {
+        "modelo": "COMPASS",
+        "regioes": [
+            {
+                "total": 18,
+                "regiao": "BELO HORIZONTE"
+            },
+            {
+                "total": 52,
+                "regiao": "CAMPINAS"
+            },
+            {
+                "total": 61,
+                "regiao": "CURITIBA"
+            },
+            {
+                "total": 48,
+                "regiao": "RECIFE"
+            },
+            {
+                "total": 16,
+                "regiao": "RIO DE JANEIRO"
+            },
+            {
+                "total": 46,
+                "regiao": "BRASILIA"
+            },
+            {
+                "total": 36,
+                "regiao": "SAO PAULO"
+            }
+        ]
+    },
+    {
+        "modelo": null,
+        "regioes": [
+            {
+                "total": 1,
+                "regiao": "BELO HORIZONTE"
+            },
+            {
+                "total": 0,
+                "regiao": "CAMPINAS"
+            },
+            {
+                "total": 2,
+                "regiao": "CURITIBA"
+            },
+            {
+                "total": 3,
+                "regiao": "RECIFE"
+            },
+            {
+                "total": 0,
+                "regiao": "RIO DE JANEIRO"
+            },
+            {
+                "total": 1,
+                "regiao": "BRASILIA"
+            },
+            {
+                "total": 1,
+                "regiao": "SAO PAULO"
+            }
+        ]
+    }
+]

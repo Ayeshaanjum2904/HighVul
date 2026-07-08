@@ -1,0 +1,116 @@
+[
+    {
+        "id": "analise_comercial",
+        "label": "Aguardando Aprovação Comercial",
+        "total": 2.0,
+        "data": [
+            {
+                "label": "Aprovados",
+                "value": 1751,
+                "percentage": 75.87,
+                "colorType": "positive"
+            },
+            {
+                "label": "Reprovados",
+                "value": 557,
+                "percentage": 24.13,
+                "colorType": "negative"
+            }
+        ]
+    },
+    {
+        "id": "analise_credito",
+        "label": "Aguardando Aprovação de Crédito",
+        "total": 0.0,
+        "data": [
+            {
+                "label": "Aprovados",
+                "value": 1746,
+                "percentage": 99.71,
+                "colorType": "positive"
+            },
+            {
+                "label": "Reprovados",
+                "value": 5,
+                "percentage": 0.29,
+                "colorType": "negative"
+            }
+        ]
+    },
+    {
+        "id": "reversao",
+        "label": "Aguardando Reversão",
+        "total": 1.0,
+        "data": [
+            {
+                "label": "Revertido",
+                "value": 1,
+                "percentage": 0.1,
+                "colorType": "positive"
+            },
+            {
+                "label": "Não Revertido",
+                "value": 974,
+                "percentage": 99.9,
+                "colorType": "positive"
+            }
+        ]
+    },
+    {
+        "id": "separacao",
+        "label": "Aguardando Separação",
+        "total": 15.0,
+        "data": [
+            {
+                "label": "Separados",
+                "value": 1730,
+                "percentage": 97.14,
+                "colorType": "positive"
+            },
+            {
+                "label": "Reprovados",
+                "value": 51,
+                "percentage": 2.86,
+                "colorType": "gray"
+            }
+        ]
+    },
+    {
+        "id": "pronto_para_faturamento",
+        "label": "Aguardando Faturamento",
+        "total": 0.0,
+        "data": [
+            {
+                "label": "Faturados",
+                "value": 1733,
+                "percentage": 100.0,
+                "colorType": "positive"
+            },
+            {
+                "label": "Reprovados",
+                "value": 0,
+                "percentage": 0.0,
+                "colorType": "gray"
+            }
+        ]
+    },
+    {
+        "id": "faturado",
+        "label": "Aguardando Pagamento do Contrato",
+        "total": 5.0,
+        "data": [
+            {
+                "label": "Pagos",
+                "value": 762,
+                "percentage": 92.7,
+                "colorType": "positive"
+            },
+            {
+                "label": "Reprovados",
+                "value": 60,
+                "percentage": 7.3,
+                "colorType": "negative"
+            }
+        ]
+    }
+]

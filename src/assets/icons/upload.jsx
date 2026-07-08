@@ -1,0 +1,24 @@
+import * as React from "react";
+import PropTypes from 'prop-types';
+
+function UploadIcon({ color, size }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g id="Icons / Feather / upload">
+        <path id="Combined Shape" fill={color} fill-rule="evenodd" clip-rule="evenodd" d="M11.2929 2.29289C11.6534 1.93241 12.2206 1.90468 12.6129 2.2097L12.7071 2.29289L17.7071 7.29289C18.0976 7.68342 18.0976 8.31658 17.7071 8.70711C17.3466 9.06759 16.7794 9.09532 16.3871 8.7903L16.2929 8.70711L13 5.41482V15.0007C13 15.5526 12.5523 16 12 16C11.4872 16 11.0645 15.6142 11.0067 15.1173L11 15.0007V5.41482L7.70711 8.70711C7.34662 9.06759 6.77939 9.09532 6.3871 8.7903L6.29289 8.70711C5.93241 8.34662 5.90468 7.77939 6.2097 7.3871L6.29289 7.29289L11.2929 2.29289ZM21 14C21.5128 14 21.9355 14.386 21.9933 14.8834L22 15V19C22 20.5977 20.7511 21.9037 19.1763 21.9949L19 22H5C3.40232 22 2.09634 20.7511 2.00509 19.1763L2 19V15C2 14.4477 2.44772 14 3 14C3.51284 14 3.93551 14.386 3.99327 14.8834L4 15V19C4 19.5128 4.38604 19.9355 4.88338 19.9933L5 20H19C19.5128 20 19.9355 19.614 19.9933 19.1166L20 19V15C20 14.4477 20.4477 14 21 14Z" />
+      </g>
+    </svg>
+  );
+}
+
+UploadIcon.propTypes = {
+  color: PropTypes.string,
+  size: PropTypes.string,
+};
+
+UploadIcon.defaultProps = {
+  color: '#555770',
+  size: 24,
+};
+
+export default UploadIcon;

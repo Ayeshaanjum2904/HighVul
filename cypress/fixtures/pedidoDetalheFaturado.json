@@ -1,0 +1,127 @@
+{
+  "pedidoId": 12706,
+  "condicaoComercialId": 1228,
+  "condicaoNegociadaId": null,
+  "corretorId": 918557,
+  "produtoId": 1,
+  "produto": "Test Drive",
+  "data": "2022-09-30T12:56:27",
+  "usuarioNome": "Sueli Mendonça Santos Leao",
+  "usuarioEmail": "suelimendonca@romagroup.com.br",
+  "observacao": null,
+  "concessionariaNome": "ROMA AUTOMOVEIS SERVICOS LTDA",
+  "concessionariaCodigo": "918557",
+  "concessionariaCnpj": "16620114000417",
+  "cor": null,
+  "pedidoIndustrial": "523395523",
+  "chassi": "359U242600",
+  "status": "faturado",
+  "regiaoCodigo": 1,
+  "regiaoNome": "BELO HORIZONTE",
+  "marca": "Fiat",
+  "modelo": "359",
+  "versao": "AHJ",
+  "serie": "1",
+  "modelYear": "2023",
+  "descricao": "CRONOS PRECISION 1.3  4P",
+  "urlImagemModelo": "https://www.fiat.com.br/content/dam/fiat/nova_home/carrossel/_0004_cronos.png",
+  "dataFaturamento": "2022-10-28T15:00:00",
+  "dataPagamento": null,
+  "numeroNotaFiscal": "5894579",
+  "numeroContrato": null,
+  "motivo": null,
+  "urlFatura": "https://fidis-hub-master-prod-fidis-hub-fp-bucket.s3.amazonaws.com/3ba430f4137457935a0681b0bbc758bb05378b37ba19ce975b50915e7c271e87",
+  "urlContrato": null,
+  "isAVista": false,
+  "descontoFinanciado": 24,
+  "descontoAVista": 25,
+  "arquivosExcecao": [
+    
+  ],
+  "condicoes": [
+    {
+      "id": 1290,
+      "negociada": false,
+      "parcelas": 1,
+      "taxa": 1.29,
+      "coeficiente": 1.20395,
+      "vencimento": 390,
+      "percentualFinanciado": 24.0
+    },
+    {
+      "id": -1,
+      "negociada": true,
+      "parcelas": null,
+      "taxa": null,
+      "coeficiente": null,
+      "vencimento": null,
+      "percentualFinanciado": null
+    },
+    {
+      "id": null,
+      "negociada": false,
+      "parcelas": 1,
+      "taxa": 2.0,
+      "coeficiente": 1.0,
+      "vencimento": 3,
+      "percentualFinanciado": null
+    },
+    {
+      "id": 1228,
+      "negociada": false,
+      "parcelas": 1,
+      "taxa": 1.29,
+      "coeficiente": 1.20394,
+      "vencimento": 390,
+      "percentualFinanciado": 24.0
+    }
+  ],
+  "camposEditaveis": [
+    "DataPagamento",
+    "NumeroContrato"
+  ],
+  "comentarios": [
+    {
+      "data": "2022-10-07T15:22:37",
+      "tipo": "atualizacao_status",
+      "conteudo": "Pedido movido para 'Aguardando Análise de Crédito'"
+    },
+    {
+      "data": "2022-10-10T10:02:18",
+      "tipo": "atualizacao_status",
+      "conteudo": "Pedido movido para 'Em Separação'"
+    },
+    {
+      "data": "2022-10-29T18:07:39",
+      "tipo": "atualizacao_status",
+      "conteudo": "Pedido movido para 'Pronto Para Faturamento'"
+    },
+    {
+      "data": "2022-10-30T18:14:45",
+      "tipo": "atualizacao_status",
+      "conteudo": "Pedido movido para 'Faturado'"
+    }
+  ],
+  "statusBar": [
+    {
+      "titulo": "COMERCIAL",
+      "situacao": "aprovado"
+    },
+    {
+      "titulo": "CRÉDITO",
+      "situacao": "aprovado"
+    },
+    {
+      "titulo": "REVISÃO",
+      "situacao": "aprovado"
+    },
+    {
+      "titulo": "SEPARAÇÃO",
+      "situacao": "aprovado"
+    },
+    {
+      "titulo": "FATURAMENTO",
+      "situacao": "aprovado"
+    }
+  ]
+}

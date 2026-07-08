@@ -1,0 +1,219 @@
+[
+    {
+        "regiao": "SAO PAULO",
+        "modalidade": [
+            {
+                "label": "À Vista",
+                "value": 94,
+                "percentage": 35.47,
+                "colorType": "gray"
+            },
+            {
+                "label": "Financiado",
+                "value": 171,
+                "percentage": 64.53,
+                "colorType": "positive"
+            }
+        ],
+        "aprovacaoCredito": [
+            {
+                "label": "Aprovado",
+                "value": 197,
+                "percentage": 100.0,
+                "colorType": "gray"
+            },
+            {
+                "label": "Reprovado",
+                "value": 0,
+                "percentage": 0.0,
+                "colorType": "negative"
+            }
+        ]
+    },
+    {
+        "regiao": "CAMPINAS",
+        "modalidade": [
+            {
+                "label": "À Vista",
+                "value": 196,
+                "percentage": 54.75,
+                "colorType": "gray"
+            },
+            {
+                "label": "Financiado",
+                "value": 162,
+                "percentage": 45.25,
+                "colorType": "positive"
+            }
+        ],
+        "aprovacaoCredito": [
+            {
+                "label": "Aprovado",
+                "value": 258,
+                "percentage": 100.0,
+                "colorType": "gray"
+            },
+            {
+                "label": "Reprovado",
+                "value": 0,
+                "percentage": 0.0,
+                "colorType": "negative"
+            }
+        ]
+    },
+    {
+        "regiao": "RECIFE",
+        "modalidade": [
+            {
+                "label": "À Vista",
+                "value": 253,
+                "percentage": 58.97,
+                "colorType": "gray"
+            },
+            {
+                "label": "Financiado",
+                "value": 176,
+                "percentage": 41.03,
+                "colorType": "positive"
+            }
+        ],
+        "aprovacaoCredito": [
+            {
+                "label": "Aprovado",
+                "value": 315,
+                "percentage": 100.0,
+                "colorType": "gray"
+            },
+            {
+                "label": "Reprovado",
+                "value": 0,
+                "percentage": 0.0,
+                "colorType": "negative"
+            }
+        ]
+    },
+    {
+        "regiao": "CURITIBA",
+        "modalidade": [
+            {
+                "label": "À Vista",
+                "value": 383,
+                "percentage": 56.08,
+                "colorType": "gray"
+            },
+            {
+                "label": "Financiado",
+                "value": 300,
+                "percentage": 43.92,
+                "colorType": "positive"
+            }
+        ],
+        "aprovacaoCredito": [
+            {
+                "label": "Aprovado",
+                "value": 447,
+                "percentage": 100.0,
+                "colorType": "gray"
+            },
+            {
+                "label": "Reprovado",
+                "value": 0,
+                "percentage": 0.0,
+                "colorType": "negative"
+            }
+        ]
+    },
+    {
+        "regiao": "RIO DE JANEIRO",
+        "modalidade": [
+            {
+                "label": "À Vista",
+                "value": 113,
+                "percentage": 45.38,
+                "colorType": "gray"
+            },
+            {
+                "label": "Financiado",
+                "value": 136,
+                "percentage": 54.62,
+                "colorType": "positive"
+            }
+        ],
+        "aprovacaoCredito": [
+            {
+                "label": "Aprovado",
+                "value": 168,
+                "percentage": 98.82,
+                "colorType": "gray"
+            },
+            {
+                "label": "Reprovado",
+                "value": 2,
+                "percentage": 1.18,
+                "colorType": "negative"
+            }
+        ]
+    },
+    {
+        "regiao": "BRASILIA",
+        "modalidade": [
+            {
+                "label": "À Vista",
+                "value": 255,
+                "percentage": 66.93,
+                "colorType": "gray"
+            },
+            {
+                "label": "Financiado",
+                "value": 126,
+                "percentage": 33.07,
+                "colorType": "positive"
+            }
+        ],
+        "aprovacaoCredito": [
+            {
+                "label": "Aprovado",
+                "value": 303,
+                "percentage": 100.0,
+                "colorType": "gray"
+            },
+            {
+                "label": "Reprovado",
+                "value": 0,
+                "percentage": 0.0,
+                "colorType": "negative"
+            }
+        ]
+    },
+    {
+        "regiao": "BELO HORIZONTE",
+        "modalidade": [
+            {
+                "label": "À Vista",
+                "value": 123,
+                "percentage": 46.24,
+                "colorType": "gray"
+            },
+            {
+                "label": "Financiado",
+                "value": 143,
+                "percentage": 53.76,
+                "colorType": "positive"
+            }
+        ],
+        "aprovacaoCredito": [
+            {
+                "label": "Aprovado",
+                "value": 197,
+                "percentage": 98.5,
+                "colorType": "gray"
+            },
+            {
+                "label": "Reprovado",
+                "value": 3,
+                "percentage": 1.5,
+                "colorType": "negative"
+            }
+        ]
+    }
+]

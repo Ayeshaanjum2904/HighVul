@@ -1,0 +1,22 @@
+### build environment (MR validation only - no production stage)
+FROM public.ecr.aws/docker/library/node:14.16 as builder
+WORKDIR /usr/src/app
+ENV PATH /usr/src/app/node_modules/.bin:$PATH
+
+# Copy lockfiles first to leverage Docker layer cache
+COPY package.json package-lock.json ./
+# Skip Cypress binary download (testes E2E pausados) - economiza ~300MB e tempo de install
+ENV CYPRESS_INSTALL_BINARY=0
+RUN npm install --legacy-peer-deps
+
+COPY . /usr/src/app
+
+# MR builds are never indexed; source maps disabled for faster builds
+ENV REACT_APP_ROBOTS="noindex,nofollow"
+ENV DISABLE_ESLINT_PLUGIN=true
+ENV GENERATE_SOURCEMAP=false
+
+# Lint roda aqui para reutilizar o mesmo npm install (evita install duplo no CI)
+RUN npm run lint --if-present
+
+RUN npm run-script build

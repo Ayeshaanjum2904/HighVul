@@ -1,0 +1,77 @@
+[
+    {
+        "codigo": "358",
+        "nome": "ARGO",
+        "brand": "Fiat"
+    },
+    {
+        "codigo": "675",
+        "nome": "COMPASS",
+        "brand": "Jeep"
+    },
+    {
+        "codigo": "359",
+        "nome": "CRONOS",
+        "brand": "Fiat"
+    },
+    {
+        "codigo": "119",
+        "nome": "DOBLO",
+        "brand": "Fiat"
+    },
+    {
+        "codigo": "560",
+        "nome": "DUCATO",
+        "brand": "Fiat"
+    },
+    {
+        "codigo": "265",
+        "nome": "FIORINO",
+        "brand": "Fiat"
+    },
+    {
+        "codigo": "604",
+        "nome": "GR CHEROKEE",
+        "brand": "Jeep"
+    },
+    {
+        "codigo": "197",
+        "nome": "GRAND SIENA",
+        "brand": "Fiat"
+    },
+    {
+        "codigo": "341",
+        "nome": "MOBI",
+        "brand": "Fiat"
+    },
+    {
+        "codigo": "281",
+        "nome": "NOVA STRADA",
+        "brand": "Fiat"
+    },
+    {
+        "codigo": "195",
+        "nome": "NOVO UNO",
+        "brand": "Fiat"
+    },
+    {
+        "codigo": "570",
+        "nome": "RAM 2500",
+        "brand": "RAM"
+    },
+    {
+        "codigo": "611",
+        "nome": "RENEGADE",
+        "brand": "Jeep"
+    },
+    {
+        "codigo": "226",
+        "nome": "TORO",
+        "brand": "Fiat"
+    },
+    {
+        "codigo": "685",
+        "nome": "WRANGLER",
+        "brand": "Jeep"
+    }
+]

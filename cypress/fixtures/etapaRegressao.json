@@ -1,0 +1,18 @@
+[
+    {
+        "label": "Aguardando Análise Comercial",
+        "value": "analise_comercial"
+    },
+    {
+        "label": "Aguardando Análise de Crédito",
+        "value": "analise_credito"
+    },
+    {
+        "label": "Aguardando Reversão",
+        "value": "financiamento_reversao"
+    },
+    {
+        "label": "Em Separação",
+        "value": "separacao"
+    }
+]

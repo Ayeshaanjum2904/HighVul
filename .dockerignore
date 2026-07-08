@@ -1,0 +1,54 @@
+# Dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Build outputs
+build
+dist
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+
+# Version control
+.git
+.gitignore
+
+# IDE / Editor
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+Dockerfile
+Dockerfile.MR
+.dockerignore
+
+# Tests
+coverage
+cypress
+jest
+**/*.test.js
+**/*.test.jsx
+**/*.spec.js
+**/*.spec.jsx
+.nyc_output
+cypress.json
+
+# Storybook
+.storybook
+storybook-static
+
+# Misc
+README.md
+lefthook.yml
+sonar-project.properties

@@ -1,0 +1,124 @@
+{
+  "pedidoId": 13196,
+  "condicaoComercialId": 1250,
+  "condicaoNegociadaId": null,
+  "corretorId": 904623,
+  "produtoId": 1,
+  "produto": "Test Drive",
+  "data": "2022-10-25T16:50:43",
+  "usuarioNome": "Hudson  Souza Araújo",
+  "usuarioEmail": "hudson.araujo@revemar.com.br",
+  "observacao": "CEVE ESTOQUE X TESTDRIVE\n\nCHASSI: 988671173NKN23593",
+  "concessionariaNome": "TEXAS COMERCIO DE AUTOMOVEIS L",
+  "concessionariaCodigo": "904623",
+  "concessionariaCnpj": "43526126000107",
+  "cor": "SLASH GOLD BICOLOR",
+  "pedidoIndustrial": "522442296",
+  "chassi": "671KN23593",
+  "status": "pronto_para_faturamento",
+  "regiaoCodigo": 7,
+  "regiaoNome": "BRASILIA",
+  "marca": "Jeep",
+  "modelo": "671",
+  "versao": "173",
+  "serie": "0",
+  "modelYear": "2022",
+  "descricao": "COMMANDER OVERLAND  TD380 4X4 MY22",
+  "urlImagemModelo": "https://www.jeep.com.br/content/dam/jeep/products/671/profile.png",
+  "dataFaturamento": null,
+  "dataPagamento": null,
+  "numeroNotaFiscal": null,
+  "numeroContrato": null,
+  "motivo": null,
+  "urlFatura": null,
+  "urlContrato": null,
+  "isAVista": false,
+  "descontoFinanciado": 18,
+  "descontoAVista": 15,
+  "arquivosExcecao": [
+    
+  ],
+  "condicoes": [
+    {
+      "id": 1280,
+      "negociada": false,
+      "parcelas": 1,
+      "taxa": 1.2,
+      "coeficiente": 1.19012,
+      "vencimento": 390,
+      "percentualFinanciado": 18.0
+    },
+    {
+      "id": -1,
+      "negociada": true,
+      "parcelas": null,
+      "taxa": null,
+      "coeficiente": null,
+      "vencimento": null,
+      "percentualFinanciado": null
+    },
+    {
+      "id": null,
+      "negociada": false,
+      "parcelas": 1,
+      "taxa": 2.0,
+      "coeficiente": 1.0,
+      "vencimento": 3,
+      "percentualFinanciado": null
+    },
+    {
+      "id": 1250,
+      "negociada": false,
+      "parcelas": 1,
+      "taxa": 1.2,
+      "coeficiente": 1.19012,
+      "vencimento": 390,
+      "percentualFinanciado": 18.0
+    }
+  ],
+  "camposEditaveis": [
+    "PedidoIndustrial",
+    "Chassi",
+    "NumeroNotaFiscal",
+    "DataFaturamento"
+  ],
+  "comentarios": [
+    {
+      "data": "2022-10-26T08:53:36",
+      "tipo": "atualizacao_status",
+      "conteudo": "Pedido movido para 'Aguardando Análise de Crédito'"
+    },
+    {
+      "data": "2022-10-26T09:49:36",
+      "tipo": "atualizacao_status",
+      "conteudo": "Pedido movido para 'Em Separação'"
+    },
+    {
+      "data": "2022-11-08T11:46:46",
+      "tipo": "atualizacao_status",
+      "conteudo": "Pedido movido para 'Pronto Para Faturamento'"
+    }
+  ],
+  "statusBar": [
+    {
+      "titulo": "COMERCIAL",
+      "situacao": "aprovado"
+    },
+    {
+      "titulo": "CRÉDITO",
+      "situacao": "aprovado"
+    },
+    {
+      "titulo": "REVISÃO",
+      "situacao": "aprovado"
+    },
+    {
+      "titulo": "SEPARAÇÃO",
+      "situacao": "aprovado"
+    },
+    {
+      "titulo": "FATURAMENTO",
+      "situacao": "em_andamento"
+    }
+  ]
+}

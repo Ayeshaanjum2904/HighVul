@@ -1,0 +1,64 @@
+{
+    "page": 0,
+    "ipp": 25,
+    "itensTotais": 3,
+    "marcas": [
+        "Fiat",
+        "Jeep",
+        "Ram"
+    ],
+    "produtos": [
+        {
+            "id": 1,
+            "descricao": "Test Drive"
+        },
+        {
+            "id": 2,
+            "descricao": "Service Car"
+        },
+        {
+            "id": 3,
+            "descricao": "Backup Car"
+        },
+        {
+            "id": 4,
+            "descricao": "Test Drive de Exceção"
+        },
+        {
+            "id": 5,
+            "descricao": "Test Drive Adicional"
+        }
+    ],
+    "condicoes": [
+        {
+            "id": 64,
+            "produto": "Test Drive de Exceção",
+            "produtoId": null,
+            "marca": "Fiat",
+            "numeroCartaDoMes": "1",
+            "vigenciaInicio": "2023-01-01T00:00:00",
+            "vigenciaFim": "2024-03-29T00:00:00",
+            "condicaoVeiculos": null
+        },
+        {
+            "id": 65,
+            "produto": "Service Car",
+            "produtoId": null,
+            "marca": "Fiat",
+            "numeroCartaDoMes": "2",
+            "vigenciaInicio": "2023-01-01T00:00:00",
+            "vigenciaFim": "2024-03-29T00:00:00",
+            "condicaoVeiculos": null
+        },
+        {
+            "id": 66,
+            "produto": "Service Car",
+            "produtoId": null,
+            "marca": "Jeep",
+            "numeroCartaDoMes": "3",
+            "vigenciaInicio": "2023-01-01T00:00:00",
+            "vigenciaFim": "2024-03-29T00:00:00",
+            "condicaoVeiculos": null
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+export const status = {
+  analiseCredito: 'analise_credito',
+  financiamentoReversao: 'financiamento_reversao',
+  financiamentoAnalise: 'financiamento_analise',
+  financiamentoFinalizacao: 'financiamento_finalizacao',
+  separacao: 'separacao',
+  separacaoMontadora: 'separacao_montadora',
+  pendenteMontadora: 'pendente_montadora',
+  separacaoErroIntegracao: 'separacao_erro_integracao',
+  prontoParaFaturamento: 'pronto_para_faturamento',
+  faturado: 'faturado',
+  faturadoMontadora: 'faturado_montadora',
+  faturamentoCancelado: 'faturamento_cancelado',
+  finalizado: 'finalizado',
+  cancelado: 'cancelado',
+  canceladoPeloCliente: 'cancelado_pelo_cliente',
+  contratoCancelado: 'contrato_cancelado',
+
+  contratoAnexado: 'contrato_anexado',
+  contratoPago: 'contrato_pago',
+  analiseComercial: 'analise_comercial',
+  analiseComercialReprovada: 'analise_comercial_reprovada',
+  aguardandoModalidadeDealer: 'aguardando_modalidade_dealer',
+  aguardandoCartaMes: 'aguardando_carta_do_mes',
+  analiseCreditoReprovada: 'analise_credito_reprovada',
+  aguardandoCondicoesAnaliseCredito: 'aguardando_condicoes_e_analise_do_credito',
+  aguardandoCartaMesAnaliseCredito: 'aguardando_carta_do_mes_e_analise_de_credito',
+  aguardandoCartaMesCondicoesAnaliseCredito: 'aguardando_carta_do_mes_condicoes_e_analise_de_credito',
+};
+
+export default status;

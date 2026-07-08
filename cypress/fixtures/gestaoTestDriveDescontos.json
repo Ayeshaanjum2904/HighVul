@@ -1,0 +1,47 @@
+{
+    "page":0,
+    "ipp":50,
+    "itensTotais":1,
+    "marcas":
+    [
+        "Fiat",
+        "Jeep",
+        "Ram"
+    ],
+    "produtos":
+    [
+        {
+            "id":1,
+            "descricao":"Test Drive"
+        },
+        {
+            "id":2,
+            "descricao":"Service Car"
+        },
+        {
+            "id":3,
+            "descricao":"Backup Car"
+        },
+        {
+            "id":4,
+            "descricao":"Test Drive de Exceção"
+        },
+        {
+            "id":5,
+            "descricao":"Test Drive Adicional"
+        }
+    ],
+    "descontos":
+    [
+        {
+            "id":61,
+            "produto":"Test Drive de Exceção",
+            "produtoId":4,
+            "dveMkt":"123",
+            "marca":"Fiat",
+            "vigenciaInicio":"2023-01-01T00:00:00",
+            "vigenciaFim":"2024-02-29T00:00:00",
+            "descontoVeiculos":null
+        }
+    ]
+}

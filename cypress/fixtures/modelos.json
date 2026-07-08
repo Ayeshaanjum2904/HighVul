@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "marca": "Fiat",
+      "codigoModelo": "358",
+      "descricaoModelo": "ARGO",
+      "urlModelo": "https://www.fiat.com.br/content/dam/fiat/nova_home/carrossel/_0002_argo.png"
+    },
+    {
+      "id": 2,
+      "marca": "Fiat",
+      "codigoModelo": "359",
+      "descricaoModelo": "CRONOS",
+      "urlModelo": "https://www.fiat.com.br/content/dam/fiat/nova_home/carrossel/_0004_cronos.png"
+    }
+]

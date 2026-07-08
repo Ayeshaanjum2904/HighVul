@@ -1,0 +1,53 @@
+{
+    "total": 2310,
+    "veiculos": [
+        {
+            "total": 540,
+            "modelo": "ARGO"
+        },
+        {
+            "total": 492,
+            "modelo": null
+        },
+        {
+            "total": 484,
+            "modelo": null
+        },
+        {
+            "total": 277,
+            "modelo": "COMPASS"
+        },
+        {
+            "total": 249,
+            "modelo": null
+        },
+        {
+            "total": 184,
+            "modelo": "RENEGADE"
+        },
+        {
+            "total": 44,
+            "modelo": "RAM 2500"
+        },
+        {
+            "total": 12,
+            "modelo": "DUCATO"
+        },
+        {
+            "total": 9,
+            "modelo": null
+        },
+        {
+            "total": 8,
+            "modelo": "GRAND SIENA"
+        },
+        {
+            "total": 8,
+            "modelo": null
+        },
+        {
+            "total": 3,
+            "modelo": null
+        }
+    ]
+}

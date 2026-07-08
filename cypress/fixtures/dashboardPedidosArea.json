@@ -1,0 +1,30 @@
+[
+    {
+        "label": "Reversão",
+        "status": "financiamento_reversao",
+        "totalAdicional": 1,
+        "totalConvencional": 0,
+        "totalExcepcional": 0
+    },
+    {
+        "label": "Em Separação",
+        "status": "separacao",
+        "totalAdicional": 8,
+        "totalConvencional": 6,
+        "totalExcepcional": 1
+    },
+    {
+        "label": "Faturado",
+        "status": "faturado",
+        "totalAdicional": 18,
+        "totalConvencional": 951,
+        "totalExcepcional": 0
+    },
+    {
+        "label": "Análise Comercial",
+        "status": "analise_comercial",
+        "totalAdicional": 0,
+        "totalConvencional": 1,
+        "totalExcepcional": 1
+    }
+]

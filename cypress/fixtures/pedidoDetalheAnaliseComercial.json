@@ -1,0 +1,93 @@
+{
+  "pedidoId": 4225,
+  "condicaoComercialId": null,
+  "condicaoNegociadaId": null,
+  "corretorId": 907030,
+  "produtoId": 4,
+  "produto": "Test Drive de Exceção",
+  "data": "2022-11-07T16:09:00",
+  "usuarioNome": "Fulano de Tal",
+  "usuarioEmail": "teste@external.stellantis.com",
+  "observacao": null,
+  "concessionariaNome": "ALL VEICULOS LTDA",
+  "concessionariaCodigo": "907030",
+  "concessionariaCnpj": "23029795000166",
+  "cor": "preto",
+  "pedidoIndustrial": "123",
+  "chassi": "3132",
+  "status": "analise_comercial",
+  "regiaoCodigo": 4,
+  "regiaoNome": "RIO DE JANEIRO",
+  "marca": "Fiat",
+  "modelo": "358",
+  "versao": "A7H",
+  "serie": "0",
+  "modelYear": "2021",
+  "descricao": "ARGO TREKKING 1.3 MY2021 1.3 MANUAL FLEX MANUAL",
+  "urlImagemModelo": "https://www.fiat.com.br/content/dam/fiat/nova_home/carrossel/_0002_argo.png",
+  "dataFaturamento": null,
+  "dataPagamento": null,
+  "numeroNotaFiscal": null,
+  "numeroContrato": null,
+  "motivo": "Abertura de novo ponto de venda",
+  "urlFatura": null,
+  "tamanhoFatura": null,
+  "nomeFatura": null,
+  "urlContrato": null,
+  "isAVista": true,
+  "descontoFinanciado": 0,
+  "descontoAVista": 10,
+  "arquivosExcecao": [
+    {
+      "id": 0,
+      "url": "https://fidis-hub-dev-nonprod-fidis-hub-fp-bucket.s3.amazonaws.com/8b7b5ac76ef9206825746977ef10a528b4700560771a7051c9de131e50c8608b",
+      "nome": "f9xia1-FULL.pdf"
+    }
+  ],
+  "condicoes": [
+    {
+      "id": -1,
+      "negociada": true,
+      "parcelas": null,
+      "taxa": null,
+      "coeficiente": null,
+      "vencimento": null,
+      "percentualFinanciado": null
+    },
+    {
+      "id": null,
+      "negociada": false,
+      "parcelas": 1,
+      "taxa": 2.0,
+      "coeficiente": 1.0,
+      "vencimento": 3,
+      "percentualFinanciado": null
+    }
+  ],
+  "camposEditaveis": [
+  ],
+  "comentarios": [
+  ],
+  "statusBar": [
+    {
+      "titulo": "COMERCIAL",
+      "situacao": "em_andamento"
+    },
+    {
+      "titulo": "CRÉDITO",
+      "situacao": "futuro"
+    },
+    {
+      "titulo": "REVISÃO",
+      "situacao": "futuro"
+    },
+    {
+      "titulo": "SEPARAÇÃO",
+      "situacao": "futuro"
+    },
+    {
+      "titulo": "FATURAMENTO",
+      "situacao": "futuro"
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+    "documentos": [
+    {
+        "idDocumento": "4d2122b9-2ae0-4766-bd7e-5edf0a334f93",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/e63f2b6866fc8d37a3b6c62c37c4c101f363a3f6b552469846bffddec0f07ab4",
+        "fileName": "TesteDocumentoGeral.pdf",
+        "dataEmissao": "2022-02-01T00:00:00",
+        "documentoTipo": 2,
+        "documentoKey": null,
+        "descricaoTipo": "Fiat sem Fundo"
+    },
+    {
+        "idDocumento": "5ca527eb-1e26-49e1-8c6c-84b8fcb96fe3",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/2a112aa010c8a4b5f9317fd6b1099433c47c456eda8aa52c0d5f0f045e0a4811",
+        "fileName": "TesteDocumentoGeral.pdf",
+        "dataEmissao": "2022-02-01T00:00:00",
+        "documentoTipo": 3,
+        "documentoKey": null,
+        "descricaoTipo": "CJDR"
+    },
+    {
+        "idDocumento": "b8f74e01-7b57-4ff0-8424-64716376f316",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/d0895f5f143e1258eb3344094114e27bc72b03c505ad2493a2d00aa1cc8d7ca7",
+        "fileName": "TesteDocumentoGeral.pdf",
+        "dataEmissao": "2022-02-01T00:00:00",
+        "documentoTipo": 1,
+        "documentoKey": null,
+        "descricaoTipo": "Fiat com Fundo"
+    },
+    {
+        "idDocumento": "882824be-b218-4494-9e83-64f6d7c312c1",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/1dcb6952cea693d36e818336fc5d801704ff9f5a3a8f0d9c0d1f7fa30002820f",
+        "fileName": "arquivo-27.xlsx",
+        "dataEmissao": "2022-01-19T00:00:00",
+        "documentoTipo": 1,
+        "documentoKey": null,
+        "descricaoTipo": "Fiat com Fundo"
+    },
+    {
+        "idDocumento": "4e18e4fb-b8ee-4927-87f5-63c2734d3090",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/42ac70e838b53d791963f01b0299241615f653fe4d7461a2e347e9b4b11e2905",
+        "fileName": "arquivo-17.xlsx",
+        "dataEmissao": "2022-01-17T00:00:00",
+        "documentoTipo": 1,
+        "documentoKey": null,
+        "descricaoTipo": "Fiat com Fundo"
+    },
+    {
+        "idDocumento": "27c4f267-ac8d-4aad-8877-19951b5c95e8",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/77120893f0f7c7c99459ab646c4a6b1eb6869db932577bdfc8a982f34c96669e",
+        "fileName": "arquivo-15.pdf",
+        "dataEmissao": "2022-01-14T00:00:00",
+        "documentoTipo": 1,
+        "documentoKey": null,
+        "descricaoTipo": "Fiat com Fundo"
+    },
+    {
+        "idDocumento": "368d651e-756b-4507-a666-17e9caea1a73",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/40d9ba39a77bd099f054c9fb90c4c9afed6d3f16bb0ac9493fc4684e79ba953c",
+        "fileName": "arquivo-16.jpg",
+        "dataEmissao": "2022-01-12T00:00:00",
+        "documentoTipo": 1,
+        "documentoKey": null,
+        "descricaoTipo": "Fiat com Fundo"
+    },
+    {
+        "idDocumento": "5ef5155c-4b9b-4a5e-af7c-bff674b28c5d",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/c0cdd4be5f5f9d8a5ed591717301ceacdbff5f31f891931ee910368d47d5632d",
+        "fileName": "arquivo-29.xlsx",
+        "dataEmissao": "2022-01-12T00:00:00",
+        "documentoTipo": 2,
+        "documentoKey": null,
+        "descricaoTipo": "Fiat sem Fundo"
+    },
+    {
+        "idDocumento": "7f38756e-b597-49e5-9da1-89c6d2c3dba9",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/9e7b96fff50f99469c385eb33d32d06cdb902afbd0b9eca0398b3e0422d9bf04",
+        "fileName": "arquivo-12.xlsx",
+        "dataEmissao": "2022-01-12T00:00:00",
+        "documentoTipo": 1,
+        "documentoKey": null,
+        "descricaoTipo": "Fiat com Fundo"
+    },
+    {
+        "idDocumento": "aef8a8aa-065e-4ec4-a6ff-a16514a23f1c",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/225de8c601783b2e842ccdf45b516a4acaac4098dc07b062d59d4a7bc2af3030",
+        "fileName": "arquivo-28.xlsx",
+        "dataEmissao": "2022-01-12T00:00:00",
+        "documentoTipo": 1,
+        "documentoKey": null,
+        "descricaoTipo": "Fiat com Fundo"
+    },
+    {
+        "idDocumento": "f728a001-1b4f-4f96-9d2d-6a50d93624ae",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/08d5dbc122c1c6da2b135129c62c30b3bdd2d3f348ffcb3de121cc8563e9a08a",
+        "fileName": "arquivo-22.xlsx",
+        "dataEmissao": "2022-01-12T00:00:00",
+        "documentoTipo": 1,
+        "documentoKey": null,
+        "descricaoTipo": "Fiat com Fundo"
+    },
+    {
+        "idDocumento": "507dc959-802b-4c51-9149-7815d9ca38bf",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/6a832583fc631b349560299860225a88a11d41d59fc36cea1755c6b25021a528",
+        "fileName": "arquivo-11.xlsx",
+        "dataEmissao": "2022-01-11T00:00:00",
+        "documentoTipo": 1,
+        "documentoKey": null,
+        "descricaoTipo": "Fiat com Fundo"
+    },
+    {
+        "idDocumento": "91f4417d-f555-409a-a1f8-4f320a7d7d67",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/544bb53246f24071e9207f7480d038f9e280478e7bb6021ac3bc1bf03d1a7dd1",
+        "fileName": "arquivo-21.xlsx",
+        "dataEmissao": "2022-01-11T00:00:00",
+        "documentoTipo": 1,
+        "documentoKey": null,
+        "descricaoTipo": "Fiat com Fundo"
+    },
+    {
+        "idDocumento": "947db557-f094-4dd9-9465-e163b827f693",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/8c22e18f5e31c3f9babc5d930e5ee21250174d71f1e0576158b525d97b987c88",
+        "fileName": "arquivo-8.txt",
+        "dataEmissao": "2022-01-08T00:00:00",
+        "documentoTipo": 3,
+        "documentoKey": null,
+        "descricaoTipo": "CJDR"
+    },
+    {
+        "idDocumento": "8bf79c6a-8470-4e97-a366-8531b956dfc4",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/710c4c4afed7b542ebb751f5ce6f3eed48e11f2543196940ad854545e8d56c64",
+        "fileName": "arquivo-6.txt",
+        "dataEmissao": "2022-01-06T00:00:00",
+        "documentoTipo": 1,
+        "documentoKey": null,
+        "descricaoTipo": "Fiat com Fundo"
+    },
+    {
+        "idDocumento": "91910ec7-29df-4830-81ad-f2252af5f941",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/b951569b660f37837c2aad8a8ff2eb8e9eee8992850704fb0378f349ccd07773",
+        "fileName": "arquivo-23.xlsx",
+        "dataEmissao": "2022-01-06T00:00:00",
+        "documentoTipo": 2,
+        "documentoKey": null,
+        "descricaoTipo": "Fiat sem Fundo"
+    },
+    {
+        "idDocumento": "299017e3-6fda-462d-a5a6-044beee9ab8e",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/8112e0c520df3fb4a2c4e0ebcc9552a254a5e38a77071cc47ea615ec6697ca9b",
+        "fileName": "arquivo-5.txt",
+        "dataEmissao": "2022-01-05T00:00:00",
+        "documentoTipo": 1,
+        "documentoKey": null,
+        "descricaoTipo": "Fiat com Fundo"
+    },
+    {
+        "idDocumento": "57316a19-ac56-4e57-a113-a1682a390f6a",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/cec2fd9f2beebc6d4c5e2c82c3f6bcbbd6705292bee1b5090f15d2a8ccc46533",
+        "fileName": "arquivo-26.zip",
+        "dataEmissao": "2022-01-05T00:00:00",
+        "documentoTipo": 2,
+        "documentoKey": null,
+        "descricaoTipo": "Fiat sem Fundo"
+    },
+    {
+        "idDocumento": "edfe4d27-75b8-41ab-8e75-db293b638734",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/613e87b0ea465d1cd98dc9fd963c9951fcce4cfa9d00892e7e155ec6cc68435c",
+        "fileName": "arquivo-10.txt",
+        "dataEmissao": "2022-01-05T00:00:00",
+        "documentoTipo": 1,
+        "documentoKey": null,
+        "descricaoTipo": "Fiat com Fundo"
+    },
+    {
+        "idDocumento": "11526349-7cd0-48a7-8fa7-4ce9940e4a1b",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/6c803c66f850ec5e4275882ff2c42b4d6add174532a9cedf5c5334fea6290296",
+        "fileName": "arquivo-7.txt",
+        "dataEmissao": "2022-01-04T00:00:00",
+        "documentoTipo": 3,
+        "documentoKey": null,
+        "descricaoTipo": "CJDR"
+    },
+    {
+        "idDocumento": "29c71369-5442-4fab-add9-80eb4b8b4d2b",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/184b59b67786a8222e766d91bcff7ae47cd0df356828e49c8b55ee2785c1b0b9",
+        "fileName": "arquivo-19.xlsx",
+        "dataEmissao": "2022-01-04T00:00:00",
+        "documentoTipo": 1,
+        "documentoKey": null,
+        "descricaoTipo": "Fiat com Fundo"
+    },
+    {
+        "idDocumento": "2f10fe44-b24d-4b83-8eb0-d4ba93520a74",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/d95b4db3642e289399ba7ef0510a6db379a6ec1535a7ad677ee2c9453899443f",
+        "fileName": "arquivo-4.txt",
+        "dataEmissao": "2022-01-04T00:00:00",
+        "documentoTipo": 1,
+        "documentoKey": null,
+        "descricaoTipo": "Fiat com Fundo"
+    },
+    {
+        "idDocumento": "08cddc89-33f5-47c6-a739-194f0dd2459c",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/437efcca1983de49d98b24a2c22c07936a1ae885bc90a99ae35871936a295bba",
+        "fileName": "arquivo-teste-3.xlsx",
+        "dataEmissao": "2022-01-03T00:00:00",
+        "documentoTipo": 1,
+        "documentoKey": null,
+        "descricaoTipo": "Fiat com Fundo"
+    },
+    {
+        "idDocumento": "45b5f16e-837c-4f09-a3b7-91147e3c0036",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/36f96a4579b5ae234aa94eda2924488ed4abc1d991e5886377a72e8e54f45d38",
+        "fileName": "arquivo-9.txt",
+        "dataEmissao": "2022-01-02T00:00:00",
+        "documentoTipo": 2,
+        "documentoKey": null,
+        "descricaoTipo": "Fiat sem Fundo"
+    },
+    {
+        "idDocumento": "57715058-f4ed-4690-8f03-6e27c9790e2d",
+        "fileURL": "https://fidis-hub-dev-nonprod-fidis-hub-dr-bucket.s3.amazonaws.com/b69235e26b9303cbc0177c56bf4a1a0568afdc7ee7024bca9f563ff54859c103",
+        "fileName": "arquivo-20.xlsx",
+        "dataEmissao": "2022-01-02T00:00:00",
+        "documentoTipo": 1,
+        "documentoKey": null,
+        "descricaoTipo": "Fiat com Fundo"
+    }
+    ],
+    "page": 0,
+    "itensPorPage": 25,
+    "totalItens": 35
+}

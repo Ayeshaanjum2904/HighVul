@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "imagem": "/assets/imgs-produto/test-drive.png",
+    "descricao": "Aqui você encontrará quais veículos você poderá disponibilizar no seu posto de venda para test drive.",
+    "titulo": "Test Drive",
+    "status": true,
+    "exibirPrincipal": true,
+    "parent": 1
+  },
+  {
+    "id": 2,
+    "imagem": "/assets/imgs-produto/service-car.png",
+    "descricao": "Aqui você encontra veículos para serem utilizados pela sua concessionária.",
+    "titulo": "Service Car",
+    "status": true,
+    "exibirPrincipal": true,
+    "parent": null
+  },
+  {
+    "id": 3,
+    "imagem": "/assets/imgs-produto/backup-car.png",
+    "descricao": "O Backup car será o veículo que você irá oferecer para uso de seus clientes durante uma manutenção.",
+    "titulo": "Backup Car",
+    "status": true,
+    "exibirPrincipal": true,
+    "parent": null
+  },
+  {
+    "id": 4,
+    "imagem": "/assets/imgs-produto/test-drive-excecao.png",
+    "descricao": "Aqui você encontrará quais veículos você poderá usar para repor seu estoque de test drive.",
+    "titulo": "Test Drive de Exceção",
+    "status": true,
+    "exibirPrincipal": false,
+    "parent": 1
+  },
+  {
+    "id": 5,
+    "imagem": "/assets/imgs-produto/test-drive-adicional.png",
+    "descricao": "Veículos demo drive para ampliação ou substituição do seu estoque de test drive.",
+    "titulo": "Test Drive Adicional",
+    "status": true,
+    "exibirPrincipal": false,
+    "parent": 1
+  }
+]

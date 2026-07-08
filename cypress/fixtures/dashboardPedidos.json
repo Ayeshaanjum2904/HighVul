@@ -1,0 +1,19 @@
+{
+    "id": "pedidos",
+    "label": "Pedidos Totais",
+    "total": 1736.0,
+    "data": [
+        {
+            "label": "À Vista",
+            "value": 905,
+            "percentage": 52.13,
+            "colorType": "negative"
+        },
+        {
+            "label": "Financiado",
+            "value": 831,
+            "percentage": 47.87,
+            "colorType": "positive"
+        }
+    ]
+}

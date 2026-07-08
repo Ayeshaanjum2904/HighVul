@@ -1,0 +1,97 @@
+{
+  "pedidoId": 1971,
+  "condicaoComercialId": 158,
+  "condicaoNegociadaId": null,
+  "corretorId": 908350,
+  "produtoId": 5,
+  "produto": "Test Drive Adicional",
+  "data": "2021-03-09T09:24:00",
+  "usuarioNome": "Raquel Burghardt Heller",
+  "usuarioEmail": "raquel.heller@rivelsc.com.br",
+  "observacao": null,
+  "concessionariaNome": "RIVEL VEICULOS LTDA",
+  "concessionariaCodigo": "908350",
+  "concessionariaCnpj": "85106037000585",
+  "cor": "BRANCO",
+  "pedidoIndustrial": "",
+  "chassi": "",
+  "status": "separacao",
+  "regiaoCodigo": 5,
+  "regiaoNome": "CURITIBA",
+  "marca": "Fiat",
+  "modelo": "560",
+  "versao": "3D3",
+  "serie": "2",
+  "modelYear": "2020",
+  "descricao": "DUCATO CHASSI 2.3 MANUAL DIESEL MANUAL",
+  "urlImagemModelo": "https://www.fiat.com.br/content/dam/fiat/nova_home/carrossel/_0009_ducato.png",
+  "dataFaturamento": null,
+  "dataPagamento": null,
+  "numeroNotaFiscal": "",
+  "numeroContrato": null,
+  "motivo": null,
+  "urlFatura": null,
+  "tamanhoFatura": null,
+  "nomeFatura": null,
+  "urlContrato": null,
+  "isAVista": false,
+  "descontoFinanciado": 23,
+  "descontoAVista": 25,
+  "arquivosExcecao": [
+    
+  ],
+  "condicoes": [
+    {
+      "id": -1,
+      "negociada": true,
+      "parcelas": null,
+      "taxa": null,
+      "coeficiente": null,
+      "vencimento": null,
+      "percentualFinanciado": null
+    },
+    {
+      "id": null,
+      "negociada": false,
+      "parcelas": 1,
+      "taxa": 2.0,
+      "coeficiente": 1.0,
+      "vencimento": 3,
+      "percentualFinanciado": null
+    },
+    {
+      "id": 158,
+      "negociada": false,
+      "parcelas": 1,
+      "taxa": 0.39,
+      "coeficiente": 1.07317,
+      "vencimento": 390,
+      "percentualFinanciado": 23.0
+    }
+  ],
+  "camposEditaveis": [
+    "PedidoIndustrial",
+    "Chassi"
+  ],
+  "comentarios": [
+    
+  ],
+  "statusBar": [
+    {
+      "titulo": "CRÉDITO",
+      "situacao": "em_andamento"
+    },
+    {
+      "titulo": "REVISÃO",
+      "situacao": "futuro"
+    },
+    {
+      "titulo": "SEPARAÇÃO",
+      "situacao": "futuro"
+    },
+    {
+      "titulo": "FATURAMENTO",
+      "situacao": "futuro"
+    }
+  ]
+}

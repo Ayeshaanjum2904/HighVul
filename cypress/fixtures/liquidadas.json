@@ -1,0 +1,30 @@
+{
+    "totalDuplicatas": {
+        "valor": 86012417.66,
+        "totalItems": 867
+    },
+    "aposVencimento": {
+        "valor": 1801458.86,
+        "totalItems": 17
+    },
+    "emEstoque": {
+        "valor": 9798673.33,
+        "totalItems": 94
+    },
+    "vendidos": {
+        "valor": 76213744.33,
+        "totalItems": 773
+    },
+    "juros": {
+        "valor": 425303.17,
+        "totalItems": 867
+    },
+    "multa": {
+        "valor": 36029.16,
+        "totalItems": 17
+    },
+    "mora": {
+        "valor": 11232.87,
+        "totalItems": 17
+    }
+}

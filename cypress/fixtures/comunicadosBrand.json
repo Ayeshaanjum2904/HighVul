@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "descricao": "Fiat com fundo"
+    },
+    {
+        "id": 2,
+        "descricao": "Fiat sem fundo"
+    },
+    {
+        "id": 3,
+        "descricao": "CJDR"
+    }
+]

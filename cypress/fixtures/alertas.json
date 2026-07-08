@@ -1,0 +1,78 @@
+{
+  "pagina": 0,
+  "itensPorPagina": 25,
+  "itensTotal": 6,
+  "alertas": [
+    {
+      "id": 1,
+      "titulo": "Teste",
+      "dataCriacao": "2021-09-13T17:37:02",
+      "startDate": "2021-09-18T00:00:00",
+      "endDate": "2021-09-17T00:00:00",
+      "brands": [
+        "Jeep",
+        "Fiat"
+      ],
+      "status": "Finalizado"
+    },
+    {
+      "id": 2,
+      "titulo": "teste",
+      "dataCriacao": "2021-11-26T16:06:41",
+      "startDate": "2021-12-01T00:00:00",
+      "endDate": "2021-12-03T00:00:00",
+      "brands": [
+        "Jeep"
+      ],
+      "status": "Finalizado"
+    },
+    {
+      "id": 4,
+      "titulo": "string",
+      "dataCriacao": "2022-04-26T11:38:13",
+      "startDate": "2022-09-06T00:00:00",
+      "endDate": "2022-09-06T00:00:00",
+      "brands": [
+        "string"
+      ],
+      "status": "Finalizado"
+    },
+    {
+      "id": 5,
+      "titulo": "Teste",
+      "dataCriacao": "2022-06-06T15:44:17",
+      "startDate": "2022-06-06T00:00:00",
+      "endDate": "2022-06-07T00:00:00",
+      "brands": [
+        "Fiat"
+      ],
+      "status": "Finalizado"
+    },
+    {
+      "id": 7,
+      "titulo": "a",
+      "dataCriacao": "2022-11-08T16:48:12",
+      "startDate": "2022-12-28T00:00:00",
+      "endDate": "2022-11-08T00:00:00",
+      "brands": [
+        "Jeep",
+        "Fiat",
+        "Chrysler",
+        "Dodge",
+        "Ram"
+      ],
+      "status": "Finalizado"
+    },
+    {
+      "id": 8,
+      "titulo": "teste alerta editado 2",
+      "dataCriacao": "2022-11-11T09:52:10",
+      "startDate": "2022-11-10T00:00:00",
+      "endDate": "2022-11-11T00:00:00",
+      "brands": [
+        "Jeep"
+      ],
+      "status": "Finalizado"
+    }
+  ]
+}

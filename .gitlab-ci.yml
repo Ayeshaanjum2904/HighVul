@@ -1,0 +1,299 @@
+#================================================================================
+# FIDIS HUB STAFF - PIPELINE CI/CD
+#
+# Descricao:
+#   Pipeline otimizado e reutilizavel para frontend React.
+#   Mantem o mesmo modelo da hub-api, ajustado para stack JS.
+#
+# Fluxo:
+#   MR -> Build (Dockerfile.MR) + SonarQube (automatico)
+#   Merge em dev/hmg/stoque -> Build + Push (automatico)
+#   Merge em master -> Build + Push (automatico)
+#   Deploy dev -> automatico | master/hmg/stoque -> manual
+#
+#================================================================================
+
+#================================================================================
+# IMAGEM PADRAO (Docker runner)
+#================================================================================
+image: 253882794486.dkr.ecr.us-east-1.amazonaws.com/build-tools:7df65c99
+
+#================================================================================
+# INCLUDES (TEMPLATES NECESSARIOS)
+#================================================================================
+# Nota: Estes templates fornecem acessos ao Checkmarx, SonarQube e helpers.
+
+include:
+  - project: "fca/architecture/IaC/cloud-digital/common-ci"
+    file: "job-commons.yml"
+  - project: "fca/architecture/IaC/cloud-digital/common-ci"
+    file: "job-commons-sqube.yml"
+
+#================================================================================
+# WORKFLOW - Define quando executar pipelines
+#================================================================================
+workflow:
+  rules:
+    - when: always
+
+#================================================================================
+# VARIAVEIS GLOBAIS (PARAMETRIZAVEIS)
+#================================================================================
+variables:
+  # ---------------------------------------------------------------------------
+  # VARIAVEIS DO MODULO
+  # ---------------------------------------------------------------------------
+  PROJECT_NAME: "fidis-hub-staff"
+  DOCKER_IMAGE_NAME: "fidis-hub-staff"
+  DEPLOY_MODULE_NAME: "fidis-hub-staff"
+
+  # ---------------------------------------------------------------------------
+  # DOCKER
+  # ---------------------------------------------------------------------------
+  DOCKER_HOST: "tcp://docker:2375"
+  DOCKER_TLS_CERTDIR: ""
+  BUILDKIT_PROGRESS: "plain"
+
+  # ---------------------------------------------------------------------------
+  # GIT
+  # ---------------------------------------------------------------------------
+  GIT_DEPTH: "0"
+  GIT_STRATEGY: "clone"
+
+  # ---------------------------------------------------------------------------
+  # SONARQUBE
+  # ---------------------------------------------------------------------------
+  SONAR_HOST_URL: "https://sonarqube.intra.stellantis.com"
+  SONAR_TIMEOUT: "300"
+  SONAR_QUALITY_GATE_WAIT: "true"
+
+  # ---------------------------------------------------------------------------
+  # AWS
+  # ---------------------------------------------------------------------------
+  AWS_REGION: "us-east-1"
+
+  # ---------------------------------------------------------------------------
+  # CACHE
+  # ---------------------------------------------------------------------------
+  # TODO: Reativar quando cypress/jest estiverem em uso
+  # CYPRESS_CACHE_FOLDER: "$CI_PROJECT_DIR/cache/Cypress"
+  # YARN_CACHE_FOLDER: "$CI_PROJECT_DIR/cache/yarn"
+
+  # ---------------------------------------------------------------------------
+  # ENCODING
+  # ---------------------------------------------------------------------------
+  LANG: "C.UTF-8"
+  LC_ALL: "C.UTF-8"
+  JAVA_TOOL_OPTIONS: "-Dfile.encoding=UTF-8"
+
+#================================================================================
+# SERVICES (Docker-in-Docker)
+#================================================================================
+services:
+  - docker:24.0.5-dind
+
+#================================================================================
+# STAGES (Fases da pipeline)
+#================================================================================
+stages:
+  - build
+  - security
+  - deploy
+
+#================================================================================
+# JOB: BUILD
+#
+# Responsabilidades:
+#   1. Build do frontend (Dockerfile.MR em MR)
+#   2. Build e push da imagem Docker (em branches release)
+#
+# Triggers:
+#   - Automatico em MR
+#   - Automatico em master/dev/hmg/stoque
+#   - Manual em outras branches
+#================================================================================
+
+build:
+  stage: build
+
+  before_script:
+    - IMAGE_TAG="$(echo $CI_COMMIT_SHA | head -c 8)"
+    - VERSION=$(date +"%Y%m%d%H%M")
+    - BUILD_START=$(date +%s)
+    - echo "IMAGE_TAG=$IMAGE_TAG BRANCH=$CI_COMMIT_REF_NAME VERSION=$VERSION"
+
+  script:
+    - |
+      if [ "$CI_PIPELINE_SOURCE" = "merge_request_event" ]; then
+        echo "Running MR docker build with Dockerfile.MR"
+        docker build -f Dockerfile.MR .
+        exit 0
+      fi
+
+      if [[ "$CI_COMMIT_BRANCH" =~ ^(master|dev|hmg|stoque)$ ]]; then
+        echo "Building and pushing docker image"
+        aws ecr get-login-password --region "$AWS_REGION" | docker login --username AWS --password-stdin $REPOSITORY_URL || echo "ECR login failed"
+        docker build -t $REPOSITORY_URL:$IMAGE_TAG -f Dockerfile . || echo "Docker build failed"
+        docker tag $REPOSITORY_URL:$IMAGE_TAG $REPOSITORY_URL:latest-$CI_COMMIT_REF_NAME || true
+        docker push $REPOSITORY_URL:$IMAGE_TAG || echo "Docker push failed"
+        docker push $REPOSITORY_URL:latest-$CI_COMMIT_REF_NAME || true
+
+        IMAGE_SIZE_MB=$(docker inspect $REPOSITORY_URL:$IMAGE_TAG --format='{{.Size}}' 2>/dev/null | awk '{print int($1/1024/1024)}' || echo "0")
+        echo "Image size: $IMAGE_SIZE_MB MB"
+      else
+        echo "Building docker image (no push)"
+        docker build -t $REPOSITORY_URL:$IMAGE_TAG -f Dockerfile .
+      fi
+
+      BUILD_END=$(date +%s)
+      BUILD_DURATION=$((BUILD_END - BUILD_START))
+      echo "Build duration: ${BUILD_DURATION}s"
+
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: always
+    - if: '$CI_COMMIT_BRANCH =~ /^(master|dev)$/'
+      when: always
+    - when: manual
+
+#================================================================================
+# JOB: SONARQUBE
+#
+# Responsabilidades:
+#   1. Analise estatica de codigo (frontend)
+#   2. Rastrear "New Code" com reference branch
+#   3. Validar Quality Gate antes de merge
+#================================================================================
+
+sonarqube:
+  dependencies:
+    - build
+  needs:
+    - build
+  variables:
+    LANG: C.UTF-8
+    LC_ALL: C.UTF-8
+    JAVA_TOOL_OPTIONS: "-Dfile.encoding=UTF-8"
+  before_script:
+    - |
+      echo "Instalando sonar-scanner e configurando SonarQube..."
+      apt-get update && apt-get install -y unzip 2>/dev/null || true
+      wget -q https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-5.0.1.3006-linux.zip -O /tmp/sonar-scanner.zip
+      unzip -q /tmp/sonar-scanner.zip -d /opt
+      export PATH="/opt/sonar-scanner-5.0.1.3006-linux/bin:$PATH"
+      vault read sonarqube/kv/login >> sonar_url.txt
+      export SONAR_URL=$(cat sonar_url.txt | jq -r '.data.SONAR_URL')
+      vault read sonarqube/kv/secret >> sonar_login.txt
+      export SONAR_TOKEN=$(cat sonar_login.txt | jq -r '.data.SONAR_LOGIN')
+      export NAMESPACE=$(echo "$CI_PROJECT_NAMESPACE" | jq -Rr 'split("/") | .[1]')
+      export SC_JRE="/opt/sonar-scanner-5.0.1.3006-linux/jre/lib/security/cacerts"
+      echo | openssl s_client -showcerts -connect sonarqube.intra.stellantis.com:443 2>/dev/null | sed -n '/BEGIN CERTIFICATE/,/END CERTIFICATE/p' > /tmp/all.crt
+      csplit -f /tmp/cert -b "%02d.crt" /tmp/all.crt '/END CERTIFICATE/+1' '{*}' 2>/dev/null || true
+      for f in /tmp/cert*.crt; do
+        if grep -q "BEGIN CERTIFICATE" "$f" 2>/dev/null; then
+          alias=$(basename "$f" .crt)
+          keytool -importcert -noprompt -alias "$alias" -file "$f" -keystore "$JAVA_HOME/lib/security/cacerts" -storepass changeit 2>/dev/null || true
+          keytool -importcert -noprompt -alias "${alias}_sc" -file "$f" -keystore "$SC_JRE" -storepass changeit 2>/dev/null || true
+        fi
+      done
+      echo "SonarQube URL: $SONAR_URL"
+  script:
+    - |
+      TARGET_BRANCH=${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-master}
+
+      SONAR_ARGS=(
+      "-Dsonar.projectKey=com.ste.sa.$NAMESPACE.$CI_PROJECT_NAME"
+      "-Dsonar.projectName=$CI_PROJECT_NAME"
+      "-Dsonar.projectVersion=${CI_COMMIT_SHORT_SHA}"
+      "-Dsonar.host.url=$SONAR_URL"
+      "-Dsonar.token=$SONAR_TOKEN"
+      "-Dsonar.sources=src"
+      "-Dsonar.exclusions=**/node_modules/**,**/build/**,**/dist/**,**/coverage/**,**/public/**,**/*.json,**/*.md,**/*.yml,**/cypress/**"
+      "-Dsonar.tests.exclusions=**/*"
+      "-Dsonar.coverage.exclusions=**/*"
+      "-Dsonar.qualitygate.wait=${SONAR_QUALITY_GATE_WAIT}"
+      "-Dsonar.qualitygate.timeout=${SONAR_TIMEOUT}"
+      "-Dbitegarden.project.tag=South_America"
+      )
+
+      if [[ "$CI_COMMIT_BRANCH" != "$TARGET_BRANCH" ]]; then
+        echo "Reference Branch (New Code): $TARGET_BRANCH"
+        SONAR_ARGS+=("-Dsonar.newCode.referenceBranch=$TARGET_BRANCH")
+      else
+        echo "Branch atual e a master - sem reference branch"
+      fi
+
+      sonar-scanner "${SONAR_ARGS[@]}"
+      
+    - echo "Analise concluida!"
+
+#================================================================================
+# JOB: ECR SECURITY SCAN (OPCIONAL)
+#
+# Descricao:
+#   Verifica vulnerabilidades de imagem Docker no ECR.
+#   Status: MANUAL (executar sob demanda)
+#================================================================================
+
+ecr_security_scan:
+  stage: security
+  image: amazon/aws-cli:latest
+  script:
+    - echo "Checking image scan findings in ECR"
+    - |
+      aws ecr describe-image-scan-findings \
+        --repository-name "$DOCKER_IMAGE_NAME" \
+        --image-id imageTag="${CI_COMMIT_SHORT_SHA}" \
+        --region "$AWS_REGION" \
+        --output json > ecr_security_scan.json || echo "Scan not available"
+    - |
+      if [ -f "ecr_security_scan.json" ]; then
+        CRITICAL=$(jq '.imageScanFindings.findingSeverityCounts.CRITICAL // 0' ecr_security_scan.json)
+        HIGH=$(jq '.imageScanFindings.findingSeverityCounts.HIGH // 0' ecr_security_scan.json)
+        echo "Findings: CRITICAL=$CRITICAL HIGH=$HIGH"
+      fi
+  artifacts:
+    paths:
+      - ecr_security_scan.json
+    expire_in: 30 days
+  rules:
+    - if: '$CI_COMMIT_BRANCH =~ /^(master|dev)$/'
+      when: manual
+  allow_failure: true
+
+#================================================================================
+# JOB: DEPLOY
+#
+# Responsabilidades:
+#   1. Atualizar versao da imagem Docker no repo de infra
+#   2. Fazer commit e push no repo de infra
+#   3. Disparar pipeline de deploy na infra
+#================================================================================
+
+deploy:
+  stage: deploy
+  extends: .deploy-common
+
+  script:
+    - IMAGE_TAG="$(echo $CI_COMMIT_SHA | head -c 8)"
+    - echo "Deploying IMAGE_TAG=$IMAGE_TAG BRANCH=$CI_COMMIT_REF_NAME"
+    - chmod +x version-update.sh
+    - ./version-update.sh $IMAGE_TAG $CI_COMMIT_REF_NAME $CI_COMMIT_SHORT_SHA $DEPLOY_MODULE_NAME || { echo 'task failed' ; exit 1; }
+    - git add . && git commit -am "Update module $CI_PROJECT_NAME with version $CI_COMMIT_SHORT_SHA $CI_COMMIT_REF_NAME by CI jobs $CI_JOB_URL triggered by $GITLAB_USER_EMAIL" || { echo "Nothing to commit" ; }
+    - git push origin "$CI_COMMIT_REF_NAME" || { echo "Push failed" ; exit 1; }
+
+  dependencies:
+    - build
+  needs:
+    - build
+
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "dev"'
+      when: always
+    - if: '$CI_COMMIT_BRANCH == "master"'
+      when: manual
+    - when: never
+
+#================================================================================
+# FIM DO PIPELINE
+#================================================================================

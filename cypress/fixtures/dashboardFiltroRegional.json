@@ -1,0 +1,94 @@
+[
+    {
+        "name": "BELO HORIZONTE",
+        "codigo": 1
+    },
+    {
+        "name": "SAO PAULO",
+        "codigo": 2
+    },
+    {
+        "name": "CAMPINAS",
+        "codigo": 3
+    },
+    {
+        "name": "RIO DE JANEIRO",
+        "codigo": 4
+    },
+    {
+        "name": "CURITIBA",
+        "codigo": 5
+    },
+    {
+        "name": "RECIFE",
+        "codigo": 6
+    },
+    {
+        "name": "BRASILIA",
+        "codigo": 7
+    },
+    {
+        "name": "CURITIBA",
+        "codigo": 8
+    },
+    {
+        "name": "SAO PAULO",
+        "codigo": 9
+    },
+    {
+        "name": "NORDESTE",
+        "codigo": 20
+    },
+    {
+        "name": "SANTA CATARINA",
+        "codigo": 21
+    },
+    {
+        "name": "MINAS GERAIS",
+        "codigo": 22
+    },
+    {
+        "name": "RIO JANEIRO",
+        "codigo": 23
+    },
+    {
+        "name": "PARANA",
+        "codigo": 24
+    },
+    {
+        "name": "CONC.CANCELADAS",
+        "codigo": 51
+    },
+    {
+        "name": "MINAS GERAIS",
+        "codigo": 71
+    },
+    {
+        "name": "SAO PAULO CAPIT",
+        "codigo": 72
+    },
+    {
+        "name": "SAO PAULO INTER",
+        "codigo": 73
+    },
+    {
+        "name": "RIO DE JANEIRO",
+        "codigo": 74
+    },
+    {
+        "name": "PORTO ALEGRE",
+        "codigo": 75
+    },
+    {
+        "name": "RECIFE",
+        "codigo": 76
+    },
+    {
+        "name": "BRASILIA",
+        "codigo": 77
+    },
+    {
+        "name": "CURITIBA",
+        "codigo": 78
+    }
+]
