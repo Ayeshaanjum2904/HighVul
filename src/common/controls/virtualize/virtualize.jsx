@@ -120,7 +120,7 @@ const Virtualize = ({
     <Autocomplete
       id="virtualize-demo"
       options={showAllItems ? [allItemsObject, ...items].sort((a, b) => a.text - b.text)
-        : items.map(() => items(0 + Math.ceil(Math.random() * 20)))
+        : items.map(() => items(0 + Math.ceil(crypto.getRandomValues(new Uint32Array(1))[0] / (0xFFFFFFFF + 1) * 20)))
           .sort((a, b) => a.text - b.text)}
       className={className}
       value={!_.isEmpty(value) ? items?.filter((i) => value
@@ -177,74 +177,4 @@ const Virtualize = ({
                 ) : null}
                 <div className={classes.text}>
                   <span className={classes.nome}>
-                    {option.buc && option.cnpj
-                      ? formatNomeConcessionaria(option.text)
-                      : camelFormat(option.text, 2) }
-                  </span>
-                  {option.buc && option.cnpj ? (
-                    <span className={classes.dados}>
-                      {`${formatCodigoConcessionaria(option.buc)} • ${formatCnpj(option.cnpj)}`}
-                    </span>
-                  ) : null}
-                </div>
-              </div>
-              {option.group === null ? <div className={classes.line} /> : null}
-            </div>
-          </li>
-        );
-      }}
-      renderInput={(params) => (
-        <TextField
-          // eslint-disable-next-line react/jsx-props-no-spreading
-          {...params}
-          label={label}
-          placeholder={value.length === 0 ? placeholder : ''}
-          InputProps={{
-            ...params.InputProps,
-            startAdornment:
-  <>
-    {showSearchIcon ? <SearchIcon style={{ fill: '#8f9bb3', color: '#8f9bb3' }} /> : null}
-    {params.InputProps.startAdornment}
-  </>,
-          }}
-        />
-      )}
-    />
 
-  );
-};
-
-Virtualize.propTypes = {
-  className: PropTypes.string,
-  onSelect: PropTypes.func,
-  value: PropTypes.any,
-  items: PropTypes.array,
-  placeholder: PropTypes.string,
-  allItemsText: PropTypes.string,
-  isActive: PropTypes.bool,
-  showAllItems: PropTypes.bool,
-  showSearchIcon: PropTypes.bool,
-  allTagsText: PropTypes.string,
-  disabled: PropTypes.bool,
-  label: PropTypes.string,
-  isGrouped: PropTypes.bool,
-  titleSelectAll: PropTypes.string,
-};
-
-Virtualize.defaultProps = {
-  className: '',
-  onSelect: null,
-  value: '',
-  items: [],
-  placeholder: '',
-  label: '',
-  allItemsText: 'Todos os filtros',
-  isActive: false,
-  showAllItems: false,
-  showSearchIcon: false,
-  allTagsText: 'Filtros selecionados',
-  disabled: false,
-  isGrouped: true,
-  titleSelectAll: 'Todos os itens',
-};
-export default Virtualize;
