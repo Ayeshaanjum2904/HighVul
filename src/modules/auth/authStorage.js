@@ -35,18 +35,10 @@ const saveLoginInfo = (user, token) => {
   cookies.save(COOKIE_FIDIS_USER_EMAIL, user.email, { secure: true });
 };
 
-const publicKey = `-----BEGIN PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs3BkpnJ2cuQx+vtu5v12
-/UVrNRRuvjIuO29c/MrtJzFJ3QxutHn549mTmLYAT40emIMXZFb/bXAH0+43WiDl
-H1h3OSl+eZHGsBaDb3i53FQCSfh1t77tVzT+9Emvvjznw29q+dkp1TA6PH5griRD
-IRpKS2htK5fSYxoKZQv3slngQncigKWTIjktmjeDhTF6eh1BfLrZ/czzdZMMOGKn
-4QBeIEX2WfYN00E9FC+jSdCectTA6B1X7Fp6o22gqE+U9MbI0eKWGELovXaJZNxW
-Ec6ltaus3Es1+GTVRGm9YLwcQDhx0kT04kH/I/qgHb1ry7GBs2hPUJWR/oH5nbUb
-PQIDAQAB
------END PUBLIC KEY-----`;
+const publicKey = process.env.PUBLIC_KEY;
 
-const key = 'e94426986ef91ec19befbaabb0a7fd46';
-const iv = 'c601304ee39f1c15';
+const key = process.env.AES_KEY;
+const iv = process.env.AES_IV;
 
 const encryptInAES = (body) => {
   const cipher = crypto.createCipheriv('aes-256-cbc', Buffer.from(key), iv);
