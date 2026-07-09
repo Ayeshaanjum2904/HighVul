@@ -45,8 +45,8 @@ Ec6ltaus3Es1+GTVRGm9YLwcQDhx0kT04kH/I/qgHb1ry7GBs2hPUJWR/oH5nbUb
 PQIDAQAB
 -----END PUBLIC KEY-----`;
 
-const key = 'e94426986ef91ec19befbaabb0a7fd46';
-const iv = 'c601304ee39f1c15';
+const key = process.env.AES_KEY;
+const iv = process.env.AES_IV;
 
 const encryptInAES = (body) => {
   const cipher = crypto.createCipheriv('aes-256-cbc', Buffer.from(key), iv);
