@@ -9,7 +9,8 @@ export function customTooltip(tooltipModel) {
   if (!tooltipEl) {
     tooltipEl = document.createElement('div');
     tooltipEl.id = 'chartjs-tooltip';
-    tooltipEl.innerHTML = '<table></table>';
+    const tableElement = document.createElement('table');
+    tooltipEl.appendChild(tableElement);
     document.body.appendChild(tooltipEl);
   }
 
@@ -36,28 +37,38 @@ export function customTooltip(tooltipModel) {
     const titleLines = tooltipModel.title || [];
     const bodyLines = tooltipModel.body.map(getBody);
 
-    let innerHtml = '<thead>';
-
+    const thead = document.createElement('thead');
     titleLines.forEach((title) => {
-      innerHtml += `<tr><th>${title}</th></tr>`;
+      const tr = document.createElement('tr');
+      const th = document.createElement('th');
+      th.textContent = title;
+      tr.appendChild(th);
+      thead.appendChild(tr);
     });
-    innerHtml += '</thead><tbody>';
 
+    const tbody = document.createElement('tbody');
     let suffix = '';
     if (this._chart.config.type === 'doughnut') suffix = '%';
 
     bodyLines.forEach((body, i) => {
       const colors = tooltipModel.labelColors[i];
-      let style = `background:${colors.backgroundColor}`;
-      style += `; border-color:${colors.borderColor}`;
-      style += '; border-width: 2px';
-      const span = `<span class="chartjs-tooltip-icon" style="${style}"></span>`;
-      innerHtml += `<tr><td>${span}${body}${suffix}</td></tr>`;
+      const style = `background:${colors.backgroundColor}; border-color:${colors.borderColor}; border-width: 2px`;
+      const span = document.createElement('span');
+      span.className = 'chartjs-tooltip-icon';
+      span.style = style;
+
+      const tr = document.createElement('tr');
+      const td = document.createElement('td');
+      td.appendChild(span);
+      td.appendChild(document.createTextNode(`${body}${suffix}`));
+      tr.appendChild(td);
+      tbody.appendChild(tr);
     });
-    innerHtml += '</tbody>';
 
     const tableRoot = tooltipEl.querySelector('table');
-    tableRoot.innerHTML = innerHtml;
+    tableRoot.innerHTML = '';
+    tableRoot.appendChild(thead);
+    tableRoot.appendChild(tbody);
   }
 
   // `this` will be the overall tooltip
