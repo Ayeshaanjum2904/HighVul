@@ -26,7 +26,7 @@ ARG CONFIG_ENV
 COPY nginx.conf /etc/nginx/nginx.conf
 EXPOSE 80
 
-# Add a HEALTHCHECK instruction
+# Add a healthcheck instruction
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 CMD wget -q --spider http://localhost:80 || exit 1
 
 ENTRYPOINT mv /usr/share/nginx/html/config/config-$CONFIG_ENV.js /usr/share/nginx/html/config/config.js && nginx -g 'daemon off;'
