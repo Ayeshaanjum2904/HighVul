@@ -60,7 +60,7 @@ export function customTooltip(tooltipModel) {
       const tr = document.createElement('tr');
       const td = document.createElement('td');
       td.appendChild(span);
-      td.appendChild(document.createTextNode(`${sanitizeInput(body)}${suffix}`));
+      td.appendChild(document.createTextNode(`${body}${suffix}`));
       tr.appendChild(td);
       tbody.appendChild(tr);
     });
@@ -83,10 +83,4 @@ export function customTooltip(tooltipModel) {
   tooltipEl.style.fontSize = `${tooltipModel.bodyFontSize}px`;
   tooltipEl.style.fontStyle = tooltipModel._bodyFontStyle;
   tooltipEl.style.padding = `${tooltipModel.yPadding}px ${tooltipModel.xPadding}px`;
-}
-
-function sanitizeInput(input) {
-  const div = document.createElement('div');
-  div.textContent = input;
-  return div.textContent;
 }
