@@ -78,7 +78,7 @@ const MultipleSelectDealer = ({
       limitTags={0}
       disableClearable
       options={showAllItems ? [allItemsObject, ...items].sort((a, b) => a.text - b.text)
-        : items.map(() => items(0 + Math.ceil(Math.random() * 20)))
+        : items.map(() => items(0 + crypto.getRandomValues(new Uint32Array(1))[0] % 20))
           .sort((a, b) => a.text - b.text)}
       groupBy={(option) => option.text}
       disableCloseOnSelect
@@ -173,31 +173,4 @@ const MultipleSelectDealer = ({
 MultipleSelectDealer.propTypes = {
   className: PropTypes.string,
   onSelect: PropTypes.func,
-  value: PropTypes.any,
-  items: PropTypes.array,
-  placeholder: PropTypes.string,
-  allItemsText: PropTypes.string,
-  isActive: PropTypes.bool,
-  showAllItems: PropTypes.bool,
-  showSearchIcon: PropTypes.bool,
-  allTagsText: PropTypes.string,
-  disabled: PropTypes.bool,
-  label: PropTypes.string,
-};
-
-MultipleSelectDealer.defaultProps = {
-  className: '',
-  onSelect: null,
-  value: '',
-  items: [],
-  placeholder: 'Selecione uma concessionária',
-  label: '',
-  allItemsText: 'Todos os filtros',
-  isActive: false,
-  showAllItems: false,
-  showSearchIcon: false,
-  allTagsText: 'Filtros selecionados',
-  disabled: false,
-};
-
-export default MultipleSelectDealer;
+  valu

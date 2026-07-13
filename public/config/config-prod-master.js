@@ -5,6 +5,6 @@ window.env = {
   REACT_APP_DEALER_KEY: 'dealer',
   REACT_APP_SECURITY_LINK: 'https://security.fcalatam.com.br/?callback=https:%2F%2Ffidishub.fcalatam.com.br',
 
-  REACT_APP_MIXPANEL_TOKEN: 'f4763a790b70472c7536c81449d15425',
-  REACT_APP_HOTJAR_TOKEN: 2457679,
+  REACT_APP_MIXPANEL_TOKEN: process.env.REACT_APP_MIXPANEL_TOKEN,
+  REACT_APP_HOTJAR_TOKEN: process.env.REACT_APP_HOTJAR_TOKEN,
 };
